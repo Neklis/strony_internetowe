@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 15%);
+}
+
+.postcard {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.sky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65%;
+  background: #89cde8;
+  background: linear-gradient(90deg, rgba(137, 205, 232, 1) 0%, rgba(47, 182, 189, 1) 50%, rgba(57, 171, 196, 1) 77%, rgba(0, 221, 255, 1) 100%);
+  /* TODO: background sky gradient */
+}
+
+.sun {
+  position: absolute;
+  background: #faff31;
+  top: 60px;
+  right: 80px;
+  width: 80px;
+  height: 80px;
+  box-shadow: 12px 9px 32px 14px rgba(255,184,0,0.85);
+  -webkit-box-shadow: 12px 9px 32px 14px rgba(255,184,0,0.85);
+  -moz-box-shadow: 12px 9px 32px 14px rgba(255,184,0,0.85);
+  border-radius: 185px 185px 185px 185px;
+  -webkit-border-radius: 185px 185px 185px 185px;
+  -moz-border-radius: 185px 185px 185px 185px;
+  /* TODO: sun shape and glow */
+  /* TODO: sun color experiment */
+}
+
+.hills {
+  position: absolute;
+  bottom: 28%;
+  left: -10%;
+  width: 120%;
+  height: 45%;
+  background: #4ae20d;
+  background: #00ff13;
+  background: radial-gradient(circle farthest-side at top center, #00ff13 4%, #1d8417 80%);
+  background: -webkit-radial-gradient(circle farthest-side at top center, #00ff13 4%, #1d8417 80%);
+  background: -moz-radial-gradient(circle farthest-side at top center, #00ff13 4%, #1d8417 80%);
+  border-radius: 76px 75px 0px 0px;
+  -webkit-border-radius: 76px 75px 0px 0px;
+  -moz-border-radius: 76px 75px 0px 0px;
+  border-radius: 50% 50% 0 0 / 30% 30% 0 0;
+}
+
+.water {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 32%;
+  background: #0057a3;
+  background: linear-gradient(90deg, rgba(0, 87, 163, 0.5) 0%, rgba(0, 98, 255, 0.5) 35%, rgba(0, 212, 255, 0.5) 100%);
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-family: Georgia, serif;
+  color: hsl(50, 100%, 80%);
+  font-size: 2rem;
+  text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.6),
+    0 0 30px hsl(45, 100%, 60%);
+}
+
+
+.tree {
+  position: absolute;
+  bottom: 31%;
+  left: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tree-top {
+  width: 60px;
+  height: 60px;
+  background-color: hsl(130, 55%, 35%);
+  border-radius: 50%;
+}
+
+.tree-trunk {
+  width: 14px;
+  height: 30px;
+  background-color: hsl(30, 50%, 30%);
+  margin: 0 auto;
+}
+
